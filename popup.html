@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Pixel Pirate</title>
+	<link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+	<div id="app">
+		<h2>Pixel Pirate</h2>
+
+		<div class="controls">
+			<div class="control-row">
+				<label for="selectFilter">Select:</label>
+				<select id="selectFilter">
+					<option value="none">None</option>
+					<option value="all">All</option>
+					<option value="jpg">JPEG</option>
+					<option value="png">PNG</option>
+					<option value="gif">GIF</option>
+					<option value="webp">WebP</option>
+					<option value="bmp">BMP</option>
+					<option value="svg">SVG</option>
+					<option value="tif">TIF</option>
+					<option value="heic">HEIC</option>
+					<option value="ico">ICO</option>
+					<option value="avif">AVIF</option>
+				</select>
+			</div>
+
+			<div class="control-row">
+				<label>Min W: <input type="number" id="minWidth" value="0" /></label>
+				<label>Min H: <input type="number" id="minHeight" value="0" /></label>
+			</div>
+		</div>
+
+		<div id="imageList"></div>
+
+		<button id="downloadSelected">⬇ Download Selected</button>
+	</div>
+
+	<script src="popup.js"></script>
+</body>
+</html>

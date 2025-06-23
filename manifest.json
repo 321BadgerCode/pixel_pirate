@@ -1,0 +1,28 @@
+{
+	"manifest_version": 2,
+	"name": "Pixel Pirate",
+	"version": "1.0.0",
+	"description": "Download images on a web page!",
+	"permissions": [
+		"activeTab",
+		"downloads",
+		"scripting"
+	],
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"48": "icons/icon48.png",
+			"128": "icons/icon128.png"
+		}
+	},
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content-script.js"]
+		}
+	]
+}

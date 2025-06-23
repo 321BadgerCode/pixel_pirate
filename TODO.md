@@ -1,0 +1,5 @@
+- [ ] Bulk rename options with customizable patterns (e.g., date, page title).
+- [ ] Show total download size estimate.
+- [ ] Handle CORS or image URLs that prevent direct download by proxying.
+- [ ] Support downloading from CSS backgrounds and <picture> elements.
+- [ ] Add a progress bar during downloads.

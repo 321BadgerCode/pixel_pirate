@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+	background-color: #1e1e2f;
+	color: #f0f0f0;
+	font-family: "Segoe UI", sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 12px;
+	width: 360px;
+	box-sizing: border-box;
+}
+
+h2 {
+	margin: 0 0 12px;
+	font-size: 16px;
+	text-align: center;
+	color: #ffffff;
+}
+
+/* Control Bar */
+.controls {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 14px;
+}
+
+.control-row {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.control-row label {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.controls select,
+.controls input {
+	background-color: #2e2e3f;
+	color: #ffffff;
+	border: 1px solid #444;
+	padding: 4px 6px;
+	border-radius: 4px;
+	font-size: 13px;
+	width: 75px;
+}
+
+select,
+input[type="number"] {
+	width: 75px;
+}
+
+/* Image List */
+#imageList {
+	max-height: 420px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding-right: 4px;
+}
+
+/* Individual Image Item */
+.img-item {
+	display: flex;
+	align-items: center;
+	background-color: #29293d;
+	border-radius: 6px;
+	padding: 8px;
+	gap: 12px;
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+/* Preview Thumbnail */
+.img-preview {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	flex-shrink: 0;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.img-preview img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 4px;
+	background: #111;
+}
+
+/* Type Banner */
+.type-banner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 2px 6px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #fff;
+	border-bottom-right-radius: 6px;
+	text-transform: uppercase;
+	z-index: 1;
+}
+
+/* Dynamic Colors for File Types */
+.banner-jpeg { background-color: purple; }
+.banner-png { background-color: orange; }
+.banner-gif { background-color: green; }
+.banner-webp { background-color: teal; }
+.banner-bmp { background-color: crimson; }
+.banner-svg { background-color: blue; }
+.banner-tiff { background-color: darkblue; }
+.banner-heic { background-color: darkgreen; }
+.banner-ico { background-color: darkred; }
+.banner-avif { background-color: darkviolet; }
+.banner-unknown { background-color: gray; }
+
+/* Info Text */
+.img-info {
+	flex-grow: 1;
+	font-size: 13px;
+	line-height: 1.4;
+	max-width: 150px;
+	word-wrap: break-word;
+}
+
+/* Checkbox Styling */
+.img-item input[type="checkbox"] {
+	transform: scale(1.4);
+	margin-left: auto;
+}
+
+/* Download Button */
+#downloadSelected {
+	background-color: #5c5cff;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	font-size: 14px;
+	border-radius: 4px;
+	margin-top: 12px;
+	width: 100%;
+	cursor: pointer;
+	transition: background 0.2s ease-in-out;
+}
+
+#downloadSelected:hover {
+	background-color: #4646e0;
+}
